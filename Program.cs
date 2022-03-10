@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 
 namespace App
 {
@@ -9,6 +10,7 @@ namespace App
 
 			Console.OutputEncoding = System.Text.Encoding.UTF8;
 			CreateArray();
+			// SortBubble();
 			Console.ReadKey();
 
 		 
@@ -39,6 +41,8 @@ namespace App
 					Console.Write(".");
 				}
 			}
+
+			Console.Write($"\nМаксимум: {mast.Max()}; Минимум: {mast.Min()}");
 
 			return mast;
 		   
