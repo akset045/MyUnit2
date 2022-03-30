@@ -1,35 +1,72 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
+using System.Globalization;
 
 namespace App
 {
+
 	class MyUnit2 {
 
-		static void Main () {
+		
+		static public void Main (string[] args) {
+
+			NumberFormatInfo numberFormatInfo = new NumberFormatInfo()
+			{
+				NumberDecimalSeparator = ".",
+			};
 
 			Console.OutputEncoding = System.Text.Encoding.UTF8;
-			CreateArray();
-			// SortBubble();
-			Console.ReadKey();
-
-		 
-
-		}
-
-		public static int[] CreateArray(){ // создаёт массив
 
 			Console.Write("Размер массива: ");
 			int mastsize = int.Parse(Console.ReadLine());
 
 			int[] mast = new int[mastsize];
 
-			for (int a = 0; a < mast.Length ; a++){
+			for (int a = 0; a < mast.Length; a++)
+			{
 				Console.Write($"Введите элемент №{a}: ");
 				mast[a] = int.Parse(Console.ReadLine());
 			}
 
 			Console.WriteLine($"\nИтоговый массив:");
+
+			for (int a = 0; a < mast.Length; a++)
+			{
+				Console.Write($"{mast[a]}");
+				if (a < mast.Length - 1)
+				{
+					Console.Write("; ");
+				}
+				else if (a == mast.Length - 1)
+				{
+					Console.Write(".");
+				}
+			}
+
+			foreach (int a in mast)
+			{
+				Console.Write($"{a}");
+			}
+
+			Console.ReadKey();
+		}
+
+		public static int[] CreateArray(){ // создаёт массив
+
+            Console.Write("Размер массива: ");
+            int mastsize = int.Parse(Console.ReadLine());
+
+            int[] mast = new int[mastsize];
+
+            for (int a = 0; a < mast.Length; a++)
+            {
+                Console.Write($"Введите элемент №{a}: ");
+                mast[a] = int.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine($"\nИтоговый массив:");
 
 			for (int a = 0; a < mast.Length; a++)
 			{
@@ -48,28 +85,30 @@ namespace App
 		   
 		}
 
-		public static void ShowMast(int[] mast) {
+		public static void ShowMast(int[] array) {
+
+			foreach (int a in array) {
+
+				Console.Write($"{0}", a);
+			}
 
 		}
 
-		public int SortBubble(int[] mast){ // примает массив
+		public void SortBubble(int[] array){ // примает массив
 
-			int result = 0;
+			for (int a = 0; a < array.Length ; a++) { // сортировка пызырьком
+				for (int b = 0; b < array.Length-1-a; b++) {
 
-			for (int a = 0; a < mast.Length ; a++) { // сортировка пызырьком
-				for (int b = 0; b < mast.Length-1-a; b++) {
-
-					if (mast[b] > mast[b++]) {
-						int c = mast[b];
-						mast[b] = mast[b++];
-						mast[b++] = c;
+					if (array[b] > array[b++]) {
+						int c = array[b];
+						array[b] = array[b++];
+						array[b++] = c;
 
 					}
 				}
 				
 			}
 
-			return result;
 		}
 
 		static void Fart(string[] args) {
@@ -83,7 +122,6 @@ namespace App
 				bant++;
 				Console.WriteLine($"{bant}");
 			}
-
 		}
 	}
 }
