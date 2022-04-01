@@ -96,7 +96,7 @@ namespace App
 
 		public void SortBubble(int[] array){ // примает массив
 
-			for (int a = 0; a < array.Length ; a++) { // сортировка пызырьком
+			for (int a = 0; a < array.Length ; a++) { // сортировка пузырьком
 				for (int b = 0; b < array.Length-1-a; b++) {
 
 					if (array[b] > array[b++]) {
