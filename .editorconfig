@@ -1,4 +1,9 @@
-﻿[*.{cs,vb}]
+﻿is_global = true
 
-# IDE0049: Simplify Names
-dotnet_style_predefined_type_for_locals_parameters_members = true
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+indent_style = tab
+indent_size = 2
