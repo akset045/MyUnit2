@@ -1,0 +1,29 @@
+    // public static int[] CreateAAut(){ // создаёт массив авто
+
+		// 	Console.Write("Размер массива: ");
+		// 	int mastsize = int.Parse(Console.ReadLine());
+
+		// 	var newA = new Random ();
+    // 		var mast = new int[mastsize];
+
+    // 		for (int a = 0; a < mast.Length; a++){
+    //     	mast[a] = newA.Next(mastsize);
+    // 		}
+		// 	ShowAAll(mast);
+
+		// 	return mast;
+
+		// }
+
+		// public static int[] CreateAMan(){ // создаём массив в ручную
+
+		// 	Console.Write("Размер массива: ");
+		// 	int mastsize = int.Parse(Console.ReadLine());
+
+    //   int[] mast = new int[mastsize];
+    //   for (int a = 0; a < mast.Length; a++){
+    //     Console.Write($"Введите элемент №{a}: ");
+    //     mast[a] = int.Parse(Console.ReadLine());
+		// 	}
+		// 	return mast;
+		// }
