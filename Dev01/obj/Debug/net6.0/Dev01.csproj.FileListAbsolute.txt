@@ -1,0 +1,15 @@
+C:\Users\akset\Documents\Dev\GitAkset045\MyUnit2\Dev01\bin\Debug\net6.0\Dev01.exe
+C:\Users\akset\Documents\Dev\GitAkset045\MyUnit2\Dev01\bin\Debug\net6.0\Dev01.deps.json
+C:\Users\akset\Documents\Dev\GitAkset045\MyUnit2\Dev01\bin\Debug\net6.0\Dev01.runtimeconfig.json
+C:\Users\akset\Documents\Dev\GitAkset045\MyUnit2\Dev01\bin\Debug\net6.0\Dev01.dll
+C:\Users\akset\Documents\Dev\GitAkset045\MyUnit2\Dev01\bin\Debug\net6.0\Dev01.pdb
+C:\Users\akset\Documents\Dev\GitAkset045\MyUnit2\Dev01\obj\Debug\net6.0\Dev01.csproj.AssemblyReference.cache
+C:\Users\akset\Documents\Dev\GitAkset045\MyUnit2\Dev01\obj\Debug\net6.0\Dev01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akset\Documents\Dev\GitAkset045\MyUnit2\Dev01\obj\Debug\net6.0\Dev01.AssemblyInfoInputs.cache
+C:\Users\akset\Documents\Dev\GitAkset045\MyUnit2\Dev01\obj\Debug\net6.0\Dev01.AssemblyInfo.cs
+C:\Users\akset\Documents\Dev\GitAkset045\MyUnit2\Dev01\obj\Debug\net6.0\Dev01.csproj.CoreCompileInputs.cache
+C:\Users\akset\Documents\Dev\GitAkset045\MyUnit2\Dev01\obj\Debug\net6.0\Dev01.dll
+C:\Users\akset\Documents\Dev\GitAkset045\MyUnit2\Dev01\obj\Debug\net6.0\refint\Dev01.dll
+C:\Users\akset\Documents\Dev\GitAkset045\MyUnit2\Dev01\obj\Debug\net6.0\Dev01.pdb
+C:\Users\akset\Documents\Dev\GitAkset045\MyUnit2\Dev01\obj\Debug\net6.0\Dev01.genruntimeconfig.cache
+C:\Users\akset\Documents\Dev\GitAkset045\MyUnit2\Dev01\obj\Debug\net6.0\ref\Dev01.dll

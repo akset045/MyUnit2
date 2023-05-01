@@ -8,7 +8,11 @@ namespace App{
 
 	class MyUnit2{
 
-		public void ShowAAll(int[] arr)
+		/// <summary>
+		/// Показывает весь массив.
+		/// </summary>
+		/// <param name="arr"></param>
+		public static void ShowAAll(int[] arr)
 		{
 			Console.WriteLine($"\nИтоговый массив:");
 			for (int a = 0; a < arr.Length; a++)
@@ -25,12 +29,20 @@ namespace App{
 			}
 		}
 
+		/// <summary>
+		/// Показывает максимум и минимум массива.
+		/// </summary>
+		/// <param name="arr"></param>
 		public static void ShowAUlt(int[] arr)
 		{
 			Console.Write($"\nМаксимум: {arr.Max()}; Минимум: {arr.Min()}");
 		}
 
-		public void SortBubble(int[] arr)
+		/// <summary>
+		/// Отсортировать массив методом пузырька.
+		/// </summary>
+		/// <param name="arr"></param>
+		public static void SortBubble(int[] arr)
 		{ // примает массив
 			for (int a = 0; a < arr.Length; a++)
 			{ // сортировка пузырьком
@@ -46,11 +58,14 @@ namespace App{
 			}
 		}
 
+		/// <summary>
+		///  Создаёт массив автоматически.
+		/// </summary>
+		/// <returns></returns>
 		public static int[] CreateAAut()
-		{ // создаёт массив авто
-
+		{
 			Console.Write("Размер массива: ");
-			int mastsize = int.Parse(Console.ReadLine());
+			int.TryParse(Console.ReadLine(),out int mastsize);
 
 			var newA = new Random();
 			var mast = new int[mastsize];
@@ -66,23 +81,27 @@ namespace App{
 
 		}
 
+		/// <summary>
+		/// Создаём массив в ручную.
+		/// </summary>
+		/// <returns></returns>
 		public static int[] CreateAMan()
-		{ // создаём массив в ручную
-
+		{ 
 			Console.Write("Размер массива: ");
-			int mastsize = int.Parse(Console.ReadLine());
+			int.TryParse(Console.ReadLine(), out int mastsize);
 
 			int[] mast = new int[mastsize];
 			for (int a = 0; a < mast.Length; a++)
 			{
 				Console.Write($"Введите элемент №{a}: ");
-				mast[a] = int.Parse(Console.ReadLine());
+				int.TryParse(Console.ReadLine(), out mast[a]);
 			}
+
 			return mast;
 		}
 
 
-		static public void Main()
+		public static void Main()
 		{
 
 			NumberFormatInfo numberFormatInfo = new NumberFormatInfo()
@@ -92,34 +111,43 @@ namespace App{
 
 			Console.OutputEncoding = System.Text.Encoding.UTF8;
 
+			while (true)
+            {
+				CreateAAut();
+				Console.Write($"\n");
 
-			static int[] MakeA()
-			{
 
-				switch (Console.ReadLine())
-				{
-					case "1":
-						CreateAAut();
-						break;
 
-					case "2":
-						CreateAMan();
-						break;
+				//int[] MakeA()
+				//{
 
-					default:
-						Console.WriteLine("Что-то другое?");
-						break;
+				//    switch (Console.ReadLine())
+				//    {
+				//        case "1":
+				//            CreateAAut();
+				//            break;
 
-				}
+				//        case "2":
+				//            CreateAMan();
+				//            break;
 
-				return mast;
+				//        default:
+				//            Console.WriteLine("Что-то другое?");
+				//            break;
+
+				//    }
+
+				//    return mast;
+
+				//}
+
+				//ShowAAll(mast);
+
+				Console.ReadKey();
+
 
 			}
 
-
-			ShowAAll(mast);
-
-			Console.ReadKey();
 		}
 
 	}
